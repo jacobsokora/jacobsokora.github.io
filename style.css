@@ -1,0 +1,13 @@
+.card {
+	border-radius: 5px;
+	
+}
+
+.column {
+	margin-left: 0.75rem;
+	margin-right: 0.75rem;
+}
+
+.card-header {
+	padding: 1rem;
+}

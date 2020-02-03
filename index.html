@@ -12,16 +12,84 @@
 		<script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js"></script>
 		
 		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script src="index.js"></script>
 	</head>
 
 	<body>
 		<section class="hero is-primary is-bold is-fullheight">
 			<div class="hero-body">
 				<div class="container">
-					<h1 class="title is-size-1">Jacob Sokora</h1>
-					<p class="subtitle">Software Engineer</p>
-					<a class="button is-primary is-inverted" href="resume.pdf">Resume</a>
-					<a class="button is-white is-outlined" href="portfolio">Portfolio</a>
+					<div id="main">
+						<h1 class="title is-size-1">Jacob Sokora</h1>
+						<p class="subtitle">Software Engineer</p>
+						<a class="button is-primary is-inverted" target="_blank" href="resume.pdf">Resume</a>
+						<button id="showPortfolio" class="button is-white is-outlined">Portfolio</button>
+					</div>
+					<div id="portfolio" class="card" style="display: none;">
+						<div class="card-content">
+							<div class="level">
+								<div class="level-left">
+									<p class="level-item title has-text-dark">Portfolio</p>
+								</div>
+								<div class="level-right">
+									<button class="level-item delete"></button>
+								</div>
+							</div>
+							<div class="columns is-multiline is-2">
+								<div class="column notification is-info">
+									<article class="media">
+										<figure class="media-left">
+											<p class="image is-128x128">
+												<img src="waddl.png">
+											</p>
+										</figure>
+										<div class="media-content">
+											<div class="content">
+												<p>
+													<a class="is-size-5 has-text-weight-semibold" href="https://waddl.info">Waddl</a>
+													<br />
+													An iOS application built from the ground up and published to the App Store in two months with no prior iOS experience. Uses MapKit, CoreLocation, and Core Data. Currently rated 4.8 on the App Store with over 6000 impressions.
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="column notification is-danger">
+									<article class="media">
+										<figure class="media-left">
+											<p class="image is-128x128">
+												<img src="spectra.png">
+											</p>
+										</figure>
+										<div class="media-content">
+											<div class="content">
+												<p>
+													<a class="is-size-5 has-text-weight-semibold" href="https://spectranews.org">Spectra</a>
+													<br />
+													Winning project for TigerHacks 2018 and RJI Competition 2019 finalist. Developed cross platform application to aggregate and translate news from around the world. Worked with multiple languages and frameworks to develop from the ground up with minimal help.
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="column notification is-warning">
+									<article class="media">
+										<figure class="media-left">
+											<p class="image is-128x128">
+												<img src="tiger.png">
+											</p>
+										</figure>
+										<div class="media-content">
+											<div class="content">
+												<p>
+													<a class="is-size-5 has-text-weight-semibold" href="https://github.com/tigerhacks/firebase">TigerHacks Website & API</a>
+													<br />
+													Build a website and API (including registration and a qr based check-in system) for the 2019 Mizzou Hackathon using Firebase for data storage and hosting, with NodeJS and Jade on the back end, and bootstrap and jquery on the front end. Also created API endpoints for use in hackathon mobile apps.
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
