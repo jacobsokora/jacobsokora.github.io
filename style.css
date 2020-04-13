@@ -11,3 +11,7 @@
 .card-header {
 	padding: 1rem;
 }
+
+.button.is-white.is-outlined.is-focused, .button.is-white.is-outlined.is-hovered, .button.is-white.is-outlined:focus, .button.is-white.is-outlined:hover {
+	color: #00d1b2!important;
+}
