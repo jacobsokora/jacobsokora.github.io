@@ -17,11 +17,18 @@
         <nav class="navbar" role="navigation">
             <div class="navbar-brand">
                 <p class="navbar-item has-text-weight-bold">Jacob Sokora - Projects</p>
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
             </div>
-            <div class="navbar-end">
-                <a class="navbar-item" href="/">Home</a>
-                <a class="navbar-item" href="https://thoughts.jacobsokora.me">Thoughts</a>
-                <a class="navbar-item" href="/resume.pdf">Resume</a>
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="/">Home</a>
+                    <a class="navbar-item" href="https://thoughts.jacobsokora.me">Thoughts</a>
+                    <a class="navbar-item" href="/resume.pdf">Resume</a>
+                </div>
             </div>
         </nav>
         <section class="section">
@@ -90,5 +97,13 @@
                 </div>
             </div>
         </section>
+        <script type="text/javascript">
+        $(() => {
+            $('.navbar-burger').click(() => {
+                $('.navbar-burger').toggleClass('is-active');
+                $('.navbar-menu').toggleClass('is-active');
+            });
+        });
+        </script>
     </body>
 </html>
