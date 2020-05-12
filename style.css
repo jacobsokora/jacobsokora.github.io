@@ -1,15 +1,23 @@
 .card {
-	border-radius: 5px;
-	
+	margin-top: 32px;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 0.5rem;
 }
 
-.column {
-	margin-left: 0.75rem;
-	margin-right: 0.75rem;
+.card img{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 0.5rem;
+	max-width: 96.5%;
+	max-height: 96.5%;
+	margin: 0 auto;
+	margin-top: -3.5%;
 }
 
-.card-header {
-	padding: 1rem;
+.card-footer {
+	margin-top: auto;
 }
 
 .button.is-white.is-outlined.is-focused, .button.is-white.is-outlined.is-hovered, .button.is-white.is-outlined:focus, .button.is-white.is-outlined:hover {
