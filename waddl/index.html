@@ -6,27 +6,93 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Waddl</title>
 		
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
 		<link rel="stylesheet" href="/style.css">
 
-		<script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <style>
+            .carousel {
+                overflow: hidden;
+            }
+
+            .footer {
+                bottom: 0;
+                position: absolute;
+                width: 100%;
+            }
+        </style>
 	</head>
 
 	<body>
-		<section class="hero is-primary is-bold is-fullheight">
-			<div class="hero-body">
-				<div class="container">
-                    <h1 class="title">Waddl - Waddl your way to new food</h1>
-                    <h2 class="subtitle">Waddl allows you to discover and save new restaurants around the country. Remember which places you liked and which ones you didn't so you never have to worry about it ever again.</h2>
-                    <a class="button is-white is-outlined" target="_blank" href="https://github.com/jacobsokora/urban-waddle">Source</a>
-                    <a href="https://apps.apple.com/us/app/waddl/id1375718713" target="_blank"><img src="../appstore.svg" alt="Download on the AppStore"></a>
+        <nav class="navbar container" role="navigation">
+            <div class="navbar-brand">
+                <p class="navbar-item has-text-weight-bold title">Waddl</p>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-start"></div>
+                <div class="navbar-end"></div>
+            </div>
+            <div class="navbar-brand">
+                <a class="navbar-item" target="_blank" href="https://github.com/jacobsokora/urban-waddle">
+                    <span class="icon has-text-black">
+                        <i class="fab fa-github-square fa-2x"></i>
+                    </span>
+                </a>
+                <a class="navbar-item" href="https://apps.apple.com/us/app/waddl/id1375718713" target="_blank"><img src="../appstore.svg" alt="Download on the AppStore"></a>          
+            </div>
+        </nav>
+        <section class="section">
+            <div class="container">
+                <article class="media">
+                    <figure class="media-left">
+                        <p class="image is-96x96">
+                            <img src="../projects/waddl.png">
+                        </p>
+                    </figure>
+                    <div class="media-content">
+                        <div class="content">
+                            <h1 class="title">Waddl your way to new food</h1>
+                            <p class="subtitle">Waddl allows you to discover and save new restaurants around the country. Remember which places you liked and which ones you didn't so you never have to worry about it ever again.</p>
+                            
+                        </div>
+                    </div>
+                </article>
+                <br />
+                <div id="carousel" class="carousel">
+                    <div class="item-1">
+                        <img src="Discovery.png">
+                    </div>
+                    <div class="item-2">
+                        <img src="Map.png">
+                    </div>
+                    <div class="item-3">
+                        <img src="Filter.png">
+                    </div>
+                    <div class="item-4">
+                        <img src="Saved.png">
+                    </div>
+                    <div class="item-5">
+                        <img src="Review.png">
+                    </div>
                 </div>
-			</div>
-			<div class="hero-foot">
-				<div class="container">
-					<p>&copy; 2020 Jacob Sokora</p>
-				</div>
-			</div>
-		</section>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>
+                    &copy; 2020 Jacob Sokora - <a href="privacy/">Privacy Policy</a>
+                </p>
+            </div>
+        </footer>
+        <script type="text/javascript">
+            bulmaCarousel.attach('#carousel', {
+                slidesToScroll: 1,
+                slidesToShow: 4,
+                pagination: false,
+            })
+        </script>
     </body>
 </html>

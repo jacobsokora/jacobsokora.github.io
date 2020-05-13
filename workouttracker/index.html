@@ -6,26 +6,81 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Workout Tracker</title>
 		
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
 		<link rel="stylesheet" href="/style.css">
 
-		<script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <style>
+            .carousel {
+                overflow: hidden;
+            }
+
+            .footer {
+                bottom: 0;
+                position: absolute;
+                width: 100%;
+            }
+        </style>
 	</head>
 
 	<body>
-		<section class="hero is-primary is-bold is-fullheight">
-			<div class="hero-body">
-				<div class="container">
-                    <h1 class="title">Workout Tracker for iOS</h1>
-                    <h2 class="subtitle">Say goodbye to google docs and physical notepads to track your workout progress. With this simple workout tracker, you can manage your workouts and view your progress over time, as well as track your sets and times as you exercise.</h2>
-                    <a href="https://apps.apple.com/us/app/simple-workout-tracker/id1512933367" target="_blank"><img src="../appstore.svg" alt="Download on the AppStore"></a>
+        <nav class="navbar container" role="navigation">
+            <div class="navbar-brand">
+                <p class="navbar-item has-text-weight-bold title">Workout Tracker</p>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-start"></div>
+                <div class="navbar-end"></div>
+            </div>
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://apps.apple.com/us/app/simple-workout-tracker/id1512933367" target="_blank"><img src="../appstore.svg" alt="Download on the AppStore"></a>          
+            </div>
+        </nav>
+        <section class="section">
+            <div class="container">
+                <article class="media">
+                    <figure class="media-left">
+                        <p class="image is-96x96">
+                            <img src="../projects/workouttracker.png">
+                        </p>
+                    </figure>
+                    <div class="media-content">
+                        <div class="content">
+                            <h1 class="title">Stay on top of your physical fitness</h1>
+                            <p class="subtitle">Say goodbye to google docs and physical notepads to track your workout progress. With this simple workout tracker, you can manage your workouts and view your progress over time, as well as track your sets and times as you exercise.</p>
+                        </div>
+                    </div>
+                </article>
+                <br />
+                <div id="carousel" class="carousel">
+                    <div class="item-1">
+                        <img src="iPhone 11 Pro Max-Exercises_framed.png">
+                    </div>
+                    <div class="item-2">
+                        <img src="iPhone 11 Pro Max-Progress_framed.png">
+                    </div>
+                    <div class="item-3">
+                        <img src="iPhone 11 Pro Max-Log_framed.png">
+                    </div>
                 </div>
-			</div>
-			<div class="hero-foot">
-				<div class="container">
-					<p>&copy; 2020 Jacob Sokora</p>
-				</div>
-			</div>
-		</section>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>
+                    &copy; 2020 Jacob Sokora - <a href="privacy/">Privacy Policy</a>
+                </p>
+            </div>
+        </footer>
+        <script type="text/javascript">
+            bulmaCarousel.attach('#carousel', {
+                slidesToScroll: 1,
+                slidesToShow: 3,
+                pagination: false,
+            })
+        </script>
     </body>
 </html>
